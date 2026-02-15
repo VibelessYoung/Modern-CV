@@ -10,6 +10,10 @@ import anime1 from "@/assets/images/anime-1.png";
 import anime2 from "@/assets/images/anime-2.png";
 import twitter1 from "@/assets/images/twitter-1.png";
 import twitter2 from "@/assets/images/twitter-2.png";
+import socialx from "@/assets/images/socialx.png";
+import socialxbanner from "@/assets/images/socialx-banner.png";
+import socialx1 from "@/assets/images/socialx.png";
+import socialx2 from "@/assets/images/social-2.png";
 
 export interface Project {
   id: string;
@@ -27,12 +31,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "modern-web-interface",
+    id: "saturn-anime",
     title: "Saturn-Anime",
     description:
       "modern anime website so you can see animes and their information.",
     image: scarlet,
-    imageAlt: "website interface",
+    imageAlt: "website banner",
     category: "web",
     tags: ["React", "JavaScript", "Tailwind"],
     overview:
@@ -45,11 +49,11 @@ export const projects: Project[] = [
     results: "work successfully and get good feedbacks from others.",
   },
   {
-    id: "simple-web-interface",
+    id: "job-remote",
     title: "JobRemote",
     description: "simple website for find jobs.",
     image: search,
-    imageAlt: "website interface",
+    imageAlt: "website banner",
     category: "web",
     tags: ["HTML/CSS", "JavaScript"],
     overview:
@@ -63,11 +67,11 @@ export const projects: Project[] = [
       "i guess its not work correct on host but it works on my machine:)",
   },
   {
-    id: "simple-web-interface-2",
+    id: "twitter-clone",
     title: "Twitter-Clone",
     description: "simple clone of twitter.",
     image: twitter,
-    imageAlt: "website interface",
+    imageAlt: "website banner",
     category: "web",
     tags: ["HTML/CSS", "JavaScript"],
     overview:
@@ -80,11 +84,11 @@ export const projects: Project[] = [
     results: "work successfully and get good feedbacks from others.",
   },
   {
-    id: "simple-web-interface-3",
+    id: "ocr-extractor",
     title: "OCR-Extractor",
     description: "simple ocr-extractor.",
     image: text,
-    imageAlt: "website interface",
+    imageAlt: "website banner",
     category: "web",
     tags: ["HTML/CSS", "JavaScript", "Tesseract"],
     overview:
@@ -95,5 +99,22 @@ export const projects: Project[] = [
       { url: ocr2, alt: "website interface" },
     ],
     results: "work successfully and have perfect speed for extract",
+  },
+  {
+    id: "socialx-ui",
+    title: "SocilaX-UI",
+    description: "modern web interface.",
+    image: socialxbanner,
+    imageAlt: "website banner",
+    category: "design",
+    tags: ["React", "TailwindCSS"],
+    overview: "This is a modern web interface.",
+    technologies: ["React", "TailwindCSS"],
+    gallery: [
+      { url: socialx1, alt: "website interface" },
+      { url: socialx2, alt: "website interface" },
+    ],
+    results:
+      "have a scroll-animations and responsive elements and modern view.",
   },
 ];
