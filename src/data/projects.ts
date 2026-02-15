@@ -42,7 +42,7 @@ export const projects: Project[] = [
       { url: anime1, alt: "website interface" },
       { url: anime2, alt: "website interface" },
     ],
-    results: "get a good feedbacks from friends.",
+    results: "work successfully and get good feedbacks from others.",
   },
   {
     id: "simple-web-interface",
@@ -59,7 +59,8 @@ export const projects: Project[] = [
       { url: job1, alt: "website interface" },
       { url: job2, alt: "website interface" },
     ],
-    results: "i guess its not work correct on host.",
+    results:
+      "i guess its not work correct on host but it works on my machine:)",
   },
   {
     id: "simple-web-interface-2",
@@ -76,7 +77,7 @@ export const projects: Project[] = [
       { url: twitter1, alt: "website interface" },
       { url: twitter2, alt: "website interface" },
     ],
-    results: "get a good feedbacks.",
+    results: "work successfully and get good feedbacks from others.",
   },
   {
     id: "simple-web-interface-3",
@@ -93,6 +94,6 @@ export const projects: Project[] = [
       { url: ocr1, alt: "website interface" },
       { url: ocr2, alt: "website interface" },
     ],
-    results: "get a good feedbacks.",
+    results: "work successfully and have perfect speed for extract",
   },
 ];
