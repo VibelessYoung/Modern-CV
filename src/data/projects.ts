@@ -14,6 +14,9 @@ import socialx from "@/assets/images/socialx.png";
 import socialxbanner from "@/assets/images/socialx-banner.png";
 import socialx1 from "@/assets/images/socialx.png";
 import socialx2 from "@/assets/images/social-2.png";
+import resbanner from "@/assets/images/res-banner.jpg";
+import res1 from "@/assets/images/res1.png";
+import res2 from "@/assets/images/res2.png";
 
 export interface Project {
   id: string;
@@ -116,5 +119,40 @@ export const projects: Project[] = [
     ],
     results:
       "have a scroll-animations and responsive elements and modern view.",
+  },
+  {
+    id: "resume-ui",
+    title: "Resume-UI",
+    description: "minimal web-resume.",
+    image: resbanner,
+    imageAlt: "website banner",
+    category: "design",
+    tags: [
+      "Astro",
+      "TailwindCSS",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "scrollreveal",
+      "unpkg",
+      "iconify",
+    ],
+    overview: "This is a minimal web-resume interface.",
+    technologies: [
+      "Astro",
+      "TailwindCSS",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "scrollreveal",
+      "unpkg",
+      "iconify",
+    ],
+    gallery: [
+      { url: res1, alt: "website interface" },
+      { url: res2, alt: "website interface" },
+    ],
+    results:
+      "have a scroll-animations and responsive elements and modern view and you can add your projects , your info and more...",
   },
 ];
