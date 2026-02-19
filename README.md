@@ -1,4 +1,4 @@
-### Amir-CV
+### Modern-CV
 
 Modern, responsive, and customizable personal resume website — built to showcase skills, experience, and contact information with a clean portfolio feel.
 
