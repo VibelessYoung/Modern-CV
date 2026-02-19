@@ -17,6 +17,9 @@ import socialx2 from "@/assets/images/social-2.png";
 import resbanner from "@/assets/images/res-banner.jpg";
 import res1 from "@/assets/images/res1.png";
 import res2 from "@/assets/images/res2.png";
+import music from "@/assets/images/music.jpg";
+import maxilla1 from "@/assets/images/Maxilla-1.png";
+import maxilla2 from "@/assets/images/Maxilla-2.png";
 
 export interface Project {
   id: string;
@@ -102,6 +105,23 @@ export const projects: Project[] = [
       { url: ocr2, alt: "website interface" },
     ],
     results: "work successfully and have perfect speed for extract",
+  },
+  {
+    id: "MaxillaMusic",
+    title: "Maxilla-Music",
+    description: "minimal music-player.",
+    image: music,
+    imageAlt: "website banner",
+    category: "web",
+    tags: ["HTML", "CSS", "JavaScript"],
+    overview: "This is a minimal web-music-player.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    gallery: [
+      { url: maxilla1, alt: "website interface" },
+      { url: maxilla2, alt: "website interface" },
+    ],
+    results:
+      "have a scroll-animations and responsive elements and modern view and you can add your projects , your info and more...",
   },
   {
     id: "socialx-ui",
