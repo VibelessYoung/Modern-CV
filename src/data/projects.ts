@@ -22,6 +22,10 @@ import socialx4 from "@/assets/images/social-4.png";
 import resbanner from "@/assets/images/res-banner.jpg";
 import res1 from "@/assets/images/res1.png";
 import res2 from "@/assets/images/res2.png";
+import res3 from "@/assets/images/res3.png";
+import res4 from "@/assets/images/res4.png";
+import res5 from "@/assets/images/res5.png";
+import res6 from "@/assets/images/res6.png";
 import music from "@/assets/images/music.jpg";
 import maxilla1 from "@/assets/images/Maxilla-1.png";
 import maxilla2 from "@/assets/images/Maxilla-2.png";
@@ -210,6 +214,10 @@ export const projects: Project[] = [
     gallery: [
       { url: res1, alt: "website interface" },
       { url: res2, alt: "website interface" },
+      { url: res3, alt: "website interface" },
+      { url: res4, alt: "website interface" },
+      { url: res5, alt: "website interface" },
+      { url: res6, alt: "website interface" },
     ],
     results:
       "have a scroll-animations and responsive elements and modern view and you can add your projects , your info and more...",
