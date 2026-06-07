@@ -153,7 +153,7 @@ export const projects: Project[] = [
       "have a scroll-animations and responsive elements and modern view and you can add your projects , your info and more...",
   },
   {
-    id: "socialx-ui",
+    id: "socilx-ui",
     title: "SocilaX-UI",
     description: "modern web interface",
     image: socialxbanner,
