@@ -8,6 +8,9 @@ import ocr1 from "@/assets/images/ocr-1.png";
 import ocr2 from "@/assets/images/ocr-2.png";
 import anime1 from "@/assets/images/anime-1.png";
 import anime2 from "@/assets/images/anime-2.png";
+import anime3 from "@/assets/images/anime-3.png";
+import anime4 from "@/assets/images/anime-4.png";
+import anime5 from "@/assets/images/anime-5.png";
 import twitter1 from "@/assets/images/twitter-1.png";
 import twitter2 from "@/assets/images/twitter-2.png";
 import socialx from "@/assets/images/socialx.png";
@@ -80,6 +83,9 @@ export const projects: Project[] = [
     gallery: [
       { url: anime1, alt: "website interface" },
       { url: anime2, alt: "website interface" },
+      { url: anime2, alt: "website interface" },
+      { url: anime4, alt: "website interface" },
+      { url: anime5, alt: "website interface" },
     ],
     results: "work successfully and get good feedbacks from others",
   },
