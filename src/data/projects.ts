@@ -15,8 +15,10 @@ import twitter1 from "@/assets/images/twitter-1.png";
 import twitter2 from "@/assets/images/twitter-2.png";
 import socialx from "@/assets/images/socialx.png";
 import socialxbanner from "@/assets/images/socialx-banner.png";
-import socialx1 from "@/assets/images/socialx.png";
+import socialx1 from "@/assets/images/social-1.png";
 import socialx2 from "@/assets/images/social-2.png";
+import socialx3 from "@/assets/images/social-3.png";
+import socialx4 from "@/assets/images/social-4.png";
 import resbanner from "@/assets/images/res-banner.jpg";
 import res1 from "@/assets/images/res1.png";
 import res2 from "@/assets/images/res2.png";
@@ -171,6 +173,8 @@ export const projects: Project[] = [
     gallery: [
       { url: socialx1, alt: "website interface" },
       { url: socialx2, alt: "website interface" },
+      { url: socialx3, alt: "website interface" },
+      { url: socialx4, alt: "website interface" },
     ],
     results:
       "have a scroll-animations and responsive elements and modern view.",
