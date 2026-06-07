@@ -23,6 +23,11 @@ import maxilla2 from "@/assets/images/Maxilla-2.png";
 import blog1 from "@/assets/images/blog-1.png";
 import blog2 from "@/assets/images/blog-2.png";
 import blog from "@/assets/images/blog.jpg";
+import blog3 from "@/assets/images/blog-3.png";
+import blog4 from "@/assets/images/blog-4.png";
+import blog5 from "@/assets/images/blog-5.png";
+import blog6 from "@/assets/images/blog-6.png";
+import blog7 from "@/assets/images/blog-7.png";
 export interface Project {
   id: string;
   title: string;
@@ -52,6 +57,11 @@ export const projects: Project[] = [
     gallery: [
       { url: blog1, alt: "website interface" },
       { url: blog2, alt: "website interface" },
+      { url: blog3, alt: "website interface" },
+      { url: blog4, alt: "website interface" },
+      { url: blog5, alt: "website interface" },
+      { url: blog6, alt: "website interface" },
+      { url: blog7, alt: "website interface" },
     ],
     results: "work successfully and get good feedbacks from others.",
   },
