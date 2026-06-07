@@ -50,10 +50,10 @@ export const projects: Project[] = [
     image: blog,
     imageAlt: "website banner",
     category: "web",
-    tags: ["React", "JavaScript", "Tailwind"],
+    tags: ["React", "Laravel", "Tailwind"],
     overview:
       "This is a modern full-stack project for registration, login and sending blog comments and....",
-    technologies: ["React", "laravel", "Tailwind CSS"],
+    technologies: ["React", "Laravel", "Tailwind CSS"],
     gallery: [
       { url: blog1, alt: "website interface" },
       { url: blog2, alt: "website interface" },
@@ -73,10 +73,10 @@ export const projects: Project[] = [
     image: anime,
     imageAlt: "website banner",
     category: "web",
-    tags: ["React", "JavaScript", "Tailwind"],
+    tags: ["React", "Tailwind"],
     overview:
       "This project modern anime website so you can see animes and their information and it support routing and more features.",
-    technologies: ["React", "JavaScript", "Tailwind CSS"],
+    technologies: ["React", "Tailwind CSS"],
     gallery: [
       { url: anime1, alt: "website interface" },
       { url: anime2, alt: "website interface" },
