@@ -1,4 +1,4 @@
-import scarlet from "@/assets/images/scarlet.jpg";
+import anime from "@/assets/images/anime.jpg";
 import search from "@/assets/images/search.jpg";
 import twitter from "@/assets/images/twitter.jpg";
 import text from "@/assets/images/text.jpg";
@@ -20,7 +20,9 @@ import res2 from "@/assets/images/res2.png";
 import music from "@/assets/images/music.jpg";
 import maxilla1 from "@/assets/images/Maxilla-1.png";
 import maxilla2 from "@/assets/images/Maxilla-2.png";
-
+import blog1 from "@/assets/images/blog-1.png";
+import blog2 from "@/assets/images/blog-2.png";
+import blog from "@/assets/images/blog.jpg";
 export interface Project {
   id: string;
   title: string;
@@ -37,11 +39,28 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "Blog-WebSite",
+    title: "Blog-WebSite",
+    description: "modern full-stack website so you can post blog and more",
+    image: blog,
+    imageAlt: "website banner",
+    category: "web",
+    tags: ["React", "JavaScript", "Tailwind"],
+    overview:
+      "This is a modern full-stack project for registration, login and sending blog comments and....",
+    technologies: ["React", "laravel", "Tailwind CSS"],
+    gallery: [
+      { url: blog1, alt: "website interface" },
+      { url: blog2, alt: "website interface" },
+    ],
+    results: "work successfully and get good feedbacks from others.",
+  },
+  {
     id: "saturn-anime",
     title: "Saturn-Anime",
     description:
-      "modern anime website so you can see animes and their information.",
-    image: scarlet,
+      "modern anime website so you can see animes and their information",
+    image: anime,
     imageAlt: "website banner",
     category: "web",
     tags: ["React", "JavaScript", "Tailwind"],
@@ -52,12 +71,12 @@ export const projects: Project[] = [
       { url: anime1, alt: "website interface" },
       { url: anime2, alt: "website interface" },
     ],
-    results: "work successfully and get good feedbacks from others.",
+    results: "work successfully and get good feedbacks from others",
   },
   {
     id: "job-remote",
     title: "JobRemote",
-    description: "simple website for find jobs.",
+    description: "simple website for find jobs",
     image: search,
     imageAlt: "website banner",
     category: "web",
@@ -92,7 +111,7 @@ export const projects: Project[] = [
   {
     id: "ocr-extractor",
     title: "OCR-Extractor",
-    description: "simple ocr-extractor.",
+    description: "simple ocr-extractor",
     image: text,
     imageAlt: "website banner",
     category: "web",
@@ -109,7 +128,7 @@ export const projects: Project[] = [
   {
     id: "MaxillaMusic",
     title: "Maxilla-Music",
-    description: "minimal music-player.",
+    description: "minimal music-player",
     image: music,
     imageAlt: "website banner",
     category: "web",
@@ -126,7 +145,7 @@ export const projects: Project[] = [
   {
     id: "socialx-ui",
     title: "SocilaX-UI",
-    description: "modern web interface.",
+    description: "modern web interface",
     image: socialxbanner,
     imageAlt: "website banner",
     category: "design",
@@ -143,7 +162,7 @@ export const projects: Project[] = [
   {
     id: "resume-ui",
     title: "Resume-UI",
-    description: "minimal web-resume.",
+    description: "minimal web-resume",
     image: resbanner,
     imageAlt: "website banner",
     category: "design",
