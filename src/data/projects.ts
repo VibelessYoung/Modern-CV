@@ -37,6 +37,9 @@ import blog4 from "@/assets/images/blog-4.png";
 import blog5 from "@/assets/images/blog-5.png";
 import blog6 from "@/assets/images/blog-6.png";
 import blog7 from "@/assets/images/blog-7.png";
+import arduino from "@/assets/images/arduino.jpg";
+import arduino1 from "@/assets/images/arduino-1.png";
+import arduino2 from "@/assets/images/arduino-2.png";
 export interface Project {
   id: string;
   title: string;
@@ -221,5 +224,23 @@ export const projects: Project[] = [
     ],
     results:
       "have a scroll-animations and responsive elements and modern view and you can add your projects , your info and more...",
+  },
+  {
+    id: "arduino-web",
+    title: "Arduino-Web",
+    description: "A website that connects to Arduino hardware",
+    image: arduino,
+    imageAlt: "website banner",
+    category: "arduino",
+    tags: ["React", "TailwindCSS", "Web-Serial-API", "recharts"],
+    overview:
+      "This website connects to Arduino hardware and is used for the LDR project.",
+    technologies: ["React", "TailwindCSS", "Web-Serial-API", "recharts"],
+    gallery: [
+      { url: arduino1, alt: "website interface" },
+      { url: arduino2, alt: "website interface" },
+    ],
+    results:
+      "work successfully",
   },
 ];
