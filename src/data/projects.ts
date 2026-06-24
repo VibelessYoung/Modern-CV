@@ -40,6 +40,15 @@ import blog7 from "@/assets/images/blog-7.png";
 import arduino from "@/assets/images/arduino.jpg";
 import arduino1 from "@/assets/images/arduino-1.png";
 import arduino2 from "@/assets/images/arduino-2.png";
+import task from "@/assets/images/task.jpg";
+import task1 from "@/assets/images/task-1.png";
+import task2 from "@/assets/images/task-2.png";
+import task3 from "@/assets/images/task-3.png";
+import task4 from "@/assets/images/task-4.png";
+import task5 from "@/assets/images/task-5.png";
+import task6 from "@/assets/images/task-6.png";
+import task7 from "@/assets/images/task-7.png";
+import task8 from "@/assets/images/task-8.png";
 export interface Project {
   id: string;
   title: string;
@@ -74,6 +83,28 @@ export const projects: Project[] = [
       { url: blog5, alt: "website interface" },
       { url: blog6, alt: "website interface" },
       { url: blog7, alt: "website interface" },
+    ],
+    results: "work successfully and get good feedbacks from others.",
+  },
+  {
+    id: "Task-Manager",
+    title: "Task-Manager",
+    description: "modern task-manager website so you can add task and more",
+    image: task,
+    imageAlt: "website banner",
+    category: "web",
+    tags: ["NextJS", "React", "Tailwind CSS"],
+    overview: "this website have tasks section and search and focus and more",
+    technologies: ["NextJS", "React", "Tailwind CSS"],
+    gallery: [
+      { url: task1, alt: "website interface" },
+      { url: task2, alt: "website interface" },
+      { url: task3, alt: "website interface" },
+      { url: task4, alt: "website interface" },
+      { url: task5, alt: "website interface" },
+      { url: task6, alt: "website interface" },
+      { url: task7, alt: "website interface" },
+      { url: task8, alt: "website interface" },
     ],
     results: "work successfully and get good feedbacks from others.",
   },
@@ -240,7 +271,6 @@ export const projects: Project[] = [
       { url: arduino1, alt: "website interface" },
       { url: arduino2, alt: "website interface" },
     ],
-    results:
-      "work successfully",
+    results: "work successfully",
   },
 ];
