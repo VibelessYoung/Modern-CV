@@ -8,7 +8,7 @@ export function Footer() {
 
   return (
     <footer className="relative border-t border-border/50 bg-background/70 backdrop-blur-xl">
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-primary/5 via-transparent to-transparent" />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-blue-500/15 via-blue-400/5 to-transparent" />
 
       <div className="container relative px-8 py-10 mx-auto">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
@@ -29,7 +29,7 @@ export function Footer() {
           flex h-12 w-12 items-center justify-center
           rounded-2xl
           border border-border/60
-          bg-card/40
+          bg-white/5
           backdrop-blur-xl
           transition-all
           duration-300
@@ -40,7 +40,7 @@ export function Footer() {
           "
             >
               <Github
-                className="w-5 h-5 transition-all duration-300  text-muted-foreground group-hover:text-primary group-hover:rotate-6"
+                className="w-5 h-5 transition-all duration-300 text-muted-foreground group-hover:text-primary group-hover:rotate-6"
                 strokeWidth={1.8}
               />
             </a>
@@ -52,7 +52,7 @@ export function Footer() {
           flex h-12 w-12 items-center justify-center
           rounded-2xl
           border border-border/60
-          bg-card/40
+          bg-white/5
           backdrop-blur-xl
           transition-all
           duration-300
@@ -63,7 +63,7 @@ export function Footer() {
           "
             >
               <Mail
-                className="w-5 h-5 transition-all duration-300  text-muted-foreground group-hover:text-primary"
+                className="w-5 h-5 transition-all duration-300 text-muted-foreground group-hover:text-primary"
                 strokeWidth={1.8}
               />
             </a>
@@ -77,7 +77,7 @@ export function Footer() {
           flex h-12 w-12 items-center justify-center
           rounded-2xl
           border border-border/60
-          bg-card/40
+          bg-white/5
           backdrop-blur-xl
           transition-all
           duration-300

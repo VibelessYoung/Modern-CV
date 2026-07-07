@@ -37,7 +37,7 @@ export function ContactSection() {
           email: formData.email,
           message: formData.message,
         },
-        "Tarw5VCGRr3Tat9Xu"
+        "Tarw5VCGRr3Tat9Xu",
       );
 
       toast({
@@ -61,7 +61,7 @@ export function ContactSection() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
@@ -70,28 +70,32 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="animate-section py-32 bg-neutral">
-      <div className="container mx-auto px-8">
+    <section
+      id="contact"
+      className="relative py-32 overflow-hidden animate-section bg-neutral"
+    >
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/15 via-blue-400/5 to-transparent" />
+      <div className="container px-8 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-16 text-center"
         >
           <h2
-            className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4 tracking-tight leading-tight"
+            className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-heading text-foreground"
             style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}
           >
             Get In Touch
           </h2>
-          <div className="w-24 h-1 bg-gradient-1 mx-auto rounded-full mb-6" />
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <div className="w-24 h-1 mx-auto mb-6 rounded-full bg-gradient-1" />
+          <p className="max-w-2xl mx-auto text-xl leading-relaxed text-muted-foreground">
             Have a project in mind or just want to chat? Feel free to reach out!
           </p>
         </motion.div>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+        <div className="grid max-w-5xl gap-12 mx-auto md:grid-cols-2">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -101,7 +105,7 @@ export function ContactSection() {
           >
             <Card className="bg-card text-card-foreground border-border">
               <CardHeader>
-                <CardTitle className="text-2xl font-heading font-bold text-card-foreground">
+                <CardTitle className="text-2xl font-bold font-heading text-card-foreground">
                   Send a Message
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">
@@ -114,7 +118,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-card-foreground mb-2"
+                      className="block mb-2 text-sm font-medium text-card-foreground"
                     >
                       Name
                     </label>
@@ -132,7 +136,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-card-foreground mb-2"
+                      className="block mb-2 text-sm font-medium text-card-foreground"
                     >
                       Email
                     </label>
@@ -150,7 +154,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-sm font-medium text-card-foreground mb-2"
+                      className="block mb-2 text-sm font-medium text-card-foreground"
                     >
                       Message
                     </label>
@@ -167,10 +171,10 @@ export function ContactSection() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-normal"
+                    className="w-full font-normal bg-primary text-primary-foreground hover:bg-primary/90"
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
-                    <Send className="ml-2 w-5 h-5" />
+                    <Send className="w-5 h-5 ml-2" />
                   </Button>
                 </form>
               </CardContent>
@@ -186,20 +190,20 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-heading font-bold text-foreground mb-6">
+              <h3 className="mb-6 text-2xl font-bold font-heading text-foreground">
                 Connect With Me
               </h3>
               <div className="space-y-6">
                 <a
                   href="mailto:vibelessyoung@gmail.com"
-                  className="flex items-center gap-4 p-4 bg-card text-card-foreground rounded-lg border border-border hover:border-primary transition-colors group"
+                  className="flex items-center gap-4 p-4 transition-colors border rounded-lg bg-card text-card-foreground border-border hover:border-primary group"
                 >
-                  <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                  <div className="p-3 transition-colors rounded-lg bg-primary/10 group-hover:bg-primary/20">
                     <Mail className="w-6 h-6 text-primary" strokeWidth={1.5} />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="text-card-foreground font-medium">
+                    <p className="font-medium text-card-foreground">
                       vibelessyoung@gmail.com
                     </p>
                   </div>
@@ -208,9 +212,9 @@ export function ContactSection() {
                   href="https://github.com/VibelessYoung"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-card text-card-foreground rounded-lg border border-border hover:border-primary transition-colors group"
+                  className="flex items-center gap-4 p-4 transition-colors border rounded-lg bg-card text-card-foreground border-border hover:border-primary group"
                 >
-                  <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                  <div className="p-3 transition-colors rounded-lg bg-primary/10 group-hover:bg-primary/20">
                     <Github
                       className="w-6 h-6 text-primary"
                       strokeWidth={1.5}
@@ -218,7 +222,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">GitHub</p>
-                    <p className="text-card-foreground font-medium">
+                    <p className="font-medium text-card-foreground">
                       View my repositories
                     </p>
                   </div>
@@ -226,11 +230,11 @@ export function ContactSection() {
               </div>
             </div>
 
-            <div className="bg-card text-card-foreground p-8 rounded-lg border border-border">
-              <h4 className="text-xl font-heading font-bold text-card-foreground mb-4">
+            <div className="p-8 border rounded-lg bg-card text-card-foreground border-border">
+              <h4 className="mb-4 text-xl font-bold font-heading text-card-foreground">
                 Let's Collaborate
               </h4>
-              <p className="text-card-foreground leading-relaxed">
+              <p className="leading-relaxed text-card-foreground">
                 I'm always interested in hearing about new projects and
                 opportunities. Whether you have a question or just want to say
                 hi, I'll do my best to get back to you!
