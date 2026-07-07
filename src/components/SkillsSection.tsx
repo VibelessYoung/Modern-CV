@@ -65,8 +65,6 @@ export function SkillsSection() {
         className="absolute inset-0 z-0 pointer-events-none
     [mask-image:radial-gradient(ellipse_at_center,black_65%,transparent_100%)]"
       >
-        <div className="absolute top-32 left-0 w-[420px] h-[420px] -translate-x-1/3 bg-primary/25 rounded-full blur-[120px]" />
-        <div className="absolute top-1/3 right-0 w-[420px] h-[420px] translate-x-1/3 bg-indigo-500/20 rounded-full blur-[120px]" />
       </div>
       <div className="container relative z-10 px-8 mx-auto">
         <motion.div
