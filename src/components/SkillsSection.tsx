@@ -57,8 +57,10 @@ export function SkillsSection() {
     <section
       id="skills"
       ref={sectionRef}
-      className="animate-section py-32 bg-background overflow-x-hidden"
+      className="relative py-32 overflow-hidden overflow-x-hidden animate-section bg-background"
     >
+      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/15 via-blue-400/5 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/15 via-blue-400/5 to-transparent" />
       <div
         className="absolute inset-0 z-0 pointer-events-none
     [mask-image:radial-gradient(ellipse_at_center,black_65%,transparent_100%)]"
@@ -66,24 +68,24 @@ export function SkillsSection() {
         <div className="absolute top-32 left-0 w-[420px] h-[420px] -translate-x-1/3 bg-primary/25 rounded-full blur-[120px]" />
         <div className="absolute top-1/3 right-0 w-[420px] h-[420px] translate-x-1/3 bg-indigo-500/20 rounded-full blur-[120px]" />
       </div>
-      <div className="relative container z-10 mx-auto px-8">
+      <div className="container relative z-10 px-8 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="mb-20 text-center"
         >
           <h2
-            className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4 tracking-tight leading-tight"
+            className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-heading text-foreground"
             style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}
           >
             Skills & Expertise
           </h2>
-          <div className="w-24 h-1 bg-gradient-1 mx-auto rounded-full" />
+          <div className="w-24 h-1 mx-auto rounded-full bg-gradient-1" />
         </motion.div>
 
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+        <div className="grid max-w-4xl gap-12 mx-auto md:grid-cols-2">
           {skills.map((skill, index) => {
             const Icon = skill.icon;
             return (
@@ -96,24 +98,24 @@ export function SkillsSection() {
                 className="group"
               >
                 <div className="flex items-center gap-4 mb-3">
-                  <div className="p-3 bg-card rounded-lg border border-border group-hover:border-primary transition-colors">
+                  <div className="p-3 transition-colors border rounded-lg bg-card border-border group-hover:border-primary">
                     <Icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">
-                    <div className="flex justify-between items-center mb-2">
-                      <h3 className="text-lg font-heading font-semibold text-foreground">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-semibold font-heading text-foreground">
                         {skill.name}
                       </h3>
-                      <span className="text-sm text-muted-foreground font-mono">
+                      <span className="font-mono text-sm text-muted-foreground">
                         {skill.level}%
                       </span>
                     </div>
                   </div>
                 </div>
-                <div className="h-2 bg-muted rounded-full overflow-hidden">
+                <div className="h-2 overflow-hidden rounded-full bg-muted">
                   <div
                     ref={(el) => (skillBarsRef.current[index] = el)}
-                    className="h-full bg-gradient-1 rounded-full"
+                    className="h-full rounded-full bg-gradient-1"
                     style={{ width: "0%" }}
                   />
                 </div>
