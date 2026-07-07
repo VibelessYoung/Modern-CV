@@ -55,25 +55,27 @@ export function ExperienceSection() {
   }, []);
 
   return (
-    <section id="experience" className="animate-section py-32 bg-background">
-      <div className="container mx-auto px-8">
+    <section id="experience" className="relative py-32 overflow-hidden animate-section bg-background">
+      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/15 via-blue-400/5 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/15 via-blue-400/5 to-transparent" />
+      <div className="container px-8 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="mb-20 text-center"
         >
           <h2
-            className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4 tracking-tight leading-tight"
+            className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-heading text-foreground"
             style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}
           >
             Experience
           </h2>
-          <div className="w-24 h-1 bg-gradient-1 mx-auto rounded-full" />
+          <div className="w-24 h-1 mx-auto rounded-full bg-gradient-1" />
         </motion.div>
 
-        <div ref={timelineRef} className="max-w-4xl mx-auto relative">
+        <div ref={timelineRef} className="relative max-w-4xl mx-auto">
           {/* Timeline Line */}
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-border transform md:-translate-x-1/2" />
 
@@ -87,7 +89,7 @@ export function ExperienceSection() {
               }`}
             >
               {/* Timeline Dot */}
-              <div className="absolute left-8 md:left-1/2 top-0 w-4 h-4 bg-primary rounded-full border-4 border-background transform -translate-x-1/2 z-10" />
+              <div className="absolute top-0 z-10 w-4 h-4 transform -translate-x-1/2 border-4 rounded-full left-8 md:left-1/2 bg-primary border-background" />
 
               {/* Content */}
               <div
@@ -95,23 +97,23 @@ export function ExperienceSection() {
                   index % 2 === 0 ? "md:mr-16" : "md:ml-16"
                 }`}
               >
-                <div className="bg-card text-card-foreground p-8 rounded-lg border border-border hover:border-primary transition-colors">
+                <div className="p-8 transition-colors border rounded-lg bg-card text-card-foreground border-border hover:border-primary">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="p-2 bg-primary/10 rounded-lg">
+                    <div className="p-2 rounded-lg bg-primary/10">
                       <Briefcase
                         className="w-5 h-5 text-primary"
                         strokeWidth={1.5}
                       />
                     </div>
-                    <span className="text-sm text-muted-foreground font-mono">
+                    <span className="font-mono text-sm text-muted-foreground">
                       {exp.duration}
                     </span>
                   </div>
-                  <h3 className="text-2xl font-heading font-bold text-card-foreground mb-2">
+                  <h3 className="mb-2 text-2xl font-bold font-heading text-card-foreground">
                     {exp.role}
                   </h3>
-                  <h4 className="text-lg text-primary mb-4">{exp.company}</h4>
-                  <p className="text-card-foreground leading-relaxed">
+                  <h4 className="mb-4 text-lg text-primary">{exp.company}</h4>
+                  <p className="leading-relaxed text-card-foreground">
                     {exp.description}
                   </p>
                 </div>
