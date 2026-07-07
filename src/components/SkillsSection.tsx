@@ -3,25 +3,29 @@ import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
-  Palette, // HTML / CSS / Sass
-  Brush, // Tailwind
-  Layers, // Bootstrap
-  Code2, // JavaScript
-  Atom, // React
-  Sun, // Astro
-  GitBranch, // Git
-  Github, // GitHub
+  Code2,
+  FileCode2,
+  Palette,
+  Brush,
+  Layers,
+  Atom,
+  Sun,
+  GitBranch,
+  Github,
+  Sparkles,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const skills = [
-  { name: "HTML / CSS / Sass", level: 80, icon: Palette },
-  { name: "Bootstrap", level: 70, icon: Layers },
-  { name: "Tailwind CSS", level: 70, icon: Brush },
-  { name: "JavaScript", level: 60, icon: Code2 },
-  { name: "React", level: 60, icon: Atom },
+  { name: "HTML", level: 80, icon: FileCode2 }, // HTML
+  { name: "CSS", level: 80, icon: Palette },
+  { name: "TailwindCSS", level: 60, icon: Brush }, // CSS
+  { name: "Bootstrap", level: 60, icon: Layers },
+  { name: "JavaScript", level: 50, icon: Code2 },
+  { name: "React", level: 50, icon: Atom },
   { name: "Astro", level: 40, icon: Sun },
+  { name: "Sass", level: 40, icon: Sparkles }, // Sass
   { name: "Git", level: 40, icon: GitBranch },
   { name: "GitHub", level: 40, icon: Github },
 ];
@@ -47,7 +51,7 @@ export function SkillsSection() {
               start: "top 85%",
               toggleActions: "play none none reverse",
             },
-          }
+          },
         );
       }
     });
@@ -64,8 +68,7 @@ export function SkillsSection() {
       <div
         className="absolute inset-0 z-0 pointer-events-none
     [mask-image:radial-gradient(ellipse_at_center,black_65%,transparent_100%)]"
-      >
-      </div>
+      ></div>
       <div className="container relative z-10 px-8 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
