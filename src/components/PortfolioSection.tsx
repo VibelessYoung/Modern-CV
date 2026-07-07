@@ -22,22 +22,24 @@ export function PortfolioSection() {
     filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
   return (
-    <section id="portfolio" className="animate-section py-32 bg-neutral">
-      <div className="container mx-auto px-8">
+    <section id="portfolio" className="relative py-32 overflow-hidden animate-section bg-neutral">
+      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/15 via-blue-400/5 to-transparent -z-10" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/15 via-blue-400/5 to-transparent -z-10" />
+      <div className="container px-8 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-16 text-center"
         >
           <h2
-            className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4 tracking-tight leading-tight"
+            className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-heading text-foreground"
             style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}
           >
             Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-1 mx-auto rounded-full mb-12" />
+          <div className="w-24 h-1 mx-auto mb-12 rounded-full bg-gradient-1" />
 
           {/* Filter Buttons */}
           <div className="flex flex-wrap justify-center gap-3">
@@ -58,7 +60,7 @@ export function PortfolioSection() {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3 max-w-7xl">
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -67,12 +69,12 @@ export function PortfolioSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-card text-card-foreground border-border hover:border-primary transition-all duration-300 overflow-hidden group cursor-pointer h-full flex flex-col">
+              <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 cursor-pointer bg-card text-card-foreground border-border hover:border-primary group">
                 <div className="overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.imageAlt}
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
                 </div>
@@ -81,16 +83,16 @@ export function PortfolioSection() {
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1 bg-muted text-muted-foreground text-xs rounded-full border border-border"
+                        className="px-3 py-1 text-xs border rounded-full bg-muted text-muted-foreground border-border"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <CardTitle className="text-2xl font-heading font-bold text-card-foreground mb-2">
+                  <CardTitle className="mb-2 text-2xl font-bold font-heading text-card-foreground">
                     {project.title}
                   </CardTitle>
-                  <CardDescription className="text-muted-foreground leading-relaxed">
+                  <CardDescription className="leading-relaxed text-muted-foreground">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
@@ -98,7 +100,7 @@ export function PortfolioSection() {
                   <Button
                     onClick={() => navigate(`/project/${project.id}`)}
                     variant="ghost"
-                    className="bg-transparent text-primary hover:bg-accent hover:text-primary font-normal w-full justify-between group/btn"
+                    className="justify-between w-full font-normal bg-transparent text-primary hover:bg-accent hover:text-primary group/btn"
                   >
                     View Project
                     <ArrowRight className="w-5 h-5 transition-transform group-hover/btn:translate-x-1" />
