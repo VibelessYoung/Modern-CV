@@ -13,19 +13,23 @@ import {
   GitBranch,
   Github,
   Sparkles,
+  Leaf,
+  Code,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const skills = [
-  { name: "HTML", level: 80, icon: FileCode2 }, // HTML
+  { name: "HTML", level: 90, icon: FileCode2 },
   { name: "CSS", level: 80, icon: Palette },
-  { name: "TailwindCSS", level: 60, icon: Brush }, // CSS
+  { name: "TailwindCSS", level: 70, icon: Brush },
   { name: "Bootstrap", level: 60, icon: Layers },
-  { name: "JavaScript", level: 50, icon: Code2 },
-  { name: "React", level: 50, icon: Atom },
+  { name: "Sass", level: 50, icon: Sparkles },
+  { name: "JavaScript", level: 60, icon: Code2 },
+  { name: "React", level: 60, icon: Atom },
+  { name: "NextJS", level: 40, icon: Code },
+  { name: "MongoDB", level: 40, icon: Leaf },
   { name: "Astro", level: 40, icon: Sun },
-  { name: "Sass", level: 40, icon: Sparkles }, // Sass
   { name: "Git", level: 40, icon: GitBranch },
   { name: "GitHub", level: 40, icon: Github },
 ];
