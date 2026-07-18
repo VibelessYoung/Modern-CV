@@ -111,11 +111,16 @@ export function ProjectDetailPage() {
 
             <div className="bg-card text-card-foreground p-8 rounded-lg border border-border">
               <h2 className="text-2xl font-heading font-bold text-card-foreground mb-4">
-                Results & Impact
+                Link
               </h2>
-              <p className="text-card-foreground leading-relaxed">
+              <a
+                href={project.results}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 transition-colors hover:text-blue-400 hover:underline leading-relaxed break-all"
+              >
                 {project.results}
-              </p>
+              </a>
             </div>
           </div>
         </div>

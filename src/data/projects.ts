@@ -94,7 +94,7 @@ export const projects: Project[] = [
       { url: blog6, alt: "website interface" },
       { url: blog7, alt: "website interface" },
     ],
-    results: "work successfully and get good feedbacks from others.",
+    results: "https://github.com/VibelessYoung/Blog-WebSite",
   },
   {
     id: "Task-Manager",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
       { url: task7, alt: "website interface" },
       { url: task8, alt: "website interface" },
     ],
-    results: "work successfully and get good feedbacks from others.",
+    results: "https://github.com/VibelessYoung/TaskManager",
   },
   {
     id: "Movie-App",
@@ -140,7 +140,7 @@ export const projects: Project[] = [
       { url: movie8, alt: "website interface" },
       { url: movie9, alt: "website interface" },
     ],
-    results: "work successfully and get good feedbacks from others.",
+    results: "https://github.com/VibelessYoung/Movie-App",
   },
   {
     id: "saturn-anime",
@@ -160,7 +160,7 @@ export const projects: Project[] = [
       { url: anime4, alt: "website interface" },
       { url: anime5, alt: "website interface" },
     ],
-    results: "work successfully and get good feedbacks from others",
+    results: "https://github.com/VibelessYoung/Saturn-Anime",
   },
   {
     id: "job-remote",
@@ -177,8 +177,7 @@ export const projects: Project[] = [
       { url: job1, alt: "website interface" },
       { url: job2, alt: "website interface" },
     ],
-    results:
-      "i guess its not work correct on host but it works on my machine:)",
+    results: "https://github.com/VibelessYoung/JobsRemote",
   },
   {
     id: "twitter-clone",
@@ -195,7 +194,7 @@ export const projects: Project[] = [
       { url: twitter1, alt: "website interface" },
       { url: twitter2, alt: "website interface" },
     ],
-    results: "work successfully and get good feedbacks from others.",
+    results: "https://github.com/VibelessYoung/Twitter-Clone",
   },
   {
     id: "ocr-extractor",
@@ -212,7 +211,7 @@ export const projects: Project[] = [
       { url: ocr1, alt: "website interface" },
       { url: ocr2, alt: "website interface" },
     ],
-    results: "work successfully and have perfect speed for extract",
+    results: "https://github.com/VibelessYoung/OCR-Extractor",
   },
   {
     id: "MaxillaMusic",
@@ -228,8 +227,7 @@ export const projects: Project[] = [
       { url: maxilla1, alt: "website interface" },
       { url: maxilla2, alt: "website interface" },
     ],
-    results:
-      "have a scroll-animations and responsive elements and modern view and you can add your projects , your info and more...",
+    results: "https://github.com/VibelessYoung/Maxilla-Music",
   },
   {
     id: "socilx-ui",
@@ -247,8 +245,7 @@ export const projects: Project[] = [
       { url: socialx3, alt: "website interface" },
       { url: socialx4, alt: "website interface" },
     ],
-    results:
-      "have a scroll-animations and responsive elements and modern view.",
+    results: "https://github.com/VibelessYoung/SocialX-UI",
   },
   {
     id: "resume-ui",
@@ -284,8 +281,7 @@ export const projects: Project[] = [
       { url: res5, alt: "website interface" },
       { url: res6, alt: "website interface" },
     ],
-    results:
-      "have a scroll-animations and responsive elements and modern view and you can add your projects , your info and more...",
+    results: "https://github.com/VibelessYoung/Minimal-CV",
   },
   {
     id: "arduino-web",
@@ -302,6 +298,6 @@ export const projects: Project[] = [
       { url: arduino1, alt: "website interface" },
       { url: arduino2, alt: "website interface" },
     ],
-    results: "work successfully",
+    results: "https://github.com/VibelessYoung/Arduino-LDR",
   },
 ];
