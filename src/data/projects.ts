@@ -49,6 +49,16 @@ import task5 from "@/assets/images/task-5.png";
 import task6 from "@/assets/images/task-6.png";
 import task7 from "@/assets/images/task-7.png";
 import task8 from "@/assets/images/task-8.png";
+import movie from "@/assets/images/movie.jpg";
+import movie1 from "@/assets/images/movie-1.png";
+import movie2 from "@/assets/images/movie-2.png";
+import movie3 from "@/assets/images/movie-3.png";
+import movie4 from "@/assets/images/movie-4.png";
+import movie5 from "@/assets/images/movie-5.png";
+import movie6 from "@/assets/images/movie-6.png";
+import movie7 from "@/assets/images/movie-7.png";
+import movie8 from "@/assets/images/movie-8.png";
+import movie9 from "@/assets/images/movie-9.png";
 export interface Project {
   id: string;
   title: string;
@@ -109,10 +119,33 @@ export const projects: Project[] = [
     results: "work successfully and get good feedbacks from others.",
   },
   {
+    id: "Movie-App",
+    title: "Movie-App",
+    description: "modern movie-app",
+    image: movie,
+    imageAlt: "website banner",
+    category: "web",
+    tags: ["NextJS", "React", "Tailwind CSS"],
+    overview:
+      "this website show movies and you can search and save your fav and more",
+    technologies: ["NextJS", "React", "Tailwind CSS"],
+    gallery: [
+      { url: movie1, alt: "website interface" },
+      { url: movie2, alt: "website interface" },
+      { url: movie3, alt: "website interface" },
+      { url: movie4, alt: "website interface" },
+      { url: movie5, alt: "website interface" },
+      { url: movie6, alt: "website interface" },
+      { url: movie7, alt: "website interface" },
+      { url: movie8, alt: "website interface" },
+      { url: movie9, alt: "website interface" },
+    ],
+    results: "work successfully and get good feedbacks from others.",
+  },
+  {
     id: "saturn-anime",
     title: "Saturn-Anime",
-    description:
-      "modern anime website",
+    description: "modern anime website",
     image: anime,
     imageAlt: "website banner",
     category: "web",
