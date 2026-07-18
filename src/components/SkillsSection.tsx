@@ -24,14 +24,14 @@ const skills = [
   { name: "CSS", level: 80, icon: Palette },
   { name: "TailwindCSS", level: 70, icon: Brush },
   { name: "Bootstrap", level: 60, icon: Layers },
-  { name: "Sass", level: 50, icon: Sparkles },
-  { name: "JavaScript", level: 60, icon: Code2 },
-  { name: "React", level: 60, icon: Atom },
-  { name: "NextJS", level: 40, icon: Code },
-  { name: "MongoDB", level: 40, icon: Leaf },
+  { name: "Sass", level: 40, icon: Sparkles },
+  { name: "JavaScript", level: 70, icon: Code2 },
+  { name: "React", level: 70, icon: Atom },
+  { name: "NextJS", level: 60, icon: Code },
+  { name: "MongoDB", level: 30, icon: Leaf },
   { name: "Astro", level: 40, icon: Sun },
-  { name: "Git", level: 40, icon: GitBranch },
-  { name: "GitHub", level: 40, icon: Github },
+  { name: "Git", level: 50, icon: GitBranch },
+  { name: "GitHub", level: 50, icon: Github },
 ];
 
 export function SkillsSection() {
