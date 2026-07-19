@@ -156,7 +156,6 @@ export const projects: Project[] = [
     gallery: [
       { url: anime1, alt: "website interface" },
       { url: anime2, alt: "website interface" },
-      { url: anime2, alt: "website interface" },
       { url: anime4, alt: "website interface" },
       { url: anime5, alt: "website interface" },
     ],
