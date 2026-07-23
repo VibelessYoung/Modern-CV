@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Languages  } from "lucide-react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import bg from "@/assets/images/bg.jpg";
@@ -15,12 +15,12 @@ export function HeroSection() {
     tl.fromTo(
       headlineRef.current,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" }
+      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" },
     ).fromTo(
       taglineRef.current,
       { opacity: 0, y: 30 },
       { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
-      "-=0.6"
+      "-=0.6",
     );
   }, []);
 
@@ -71,14 +71,30 @@ export function HeroSection() {
           Crafting immersive digital experiences with cutting-edge design and
           technology
         </motion.p>
-        <Button
-          onClick={scrollToPortfolio}
-          size="lg"
-          className="bg-primary text-primary-foreground hover:bg-primary/90 font-normal text-base px-8 py-6"
-        >
-          View My Work
-          <ArrowDown className="ml-2 w-5 h-5" />
-        </Button>
+        <div className="flex flex-col items-center gap-4">
+          <Button
+            onClick={() =>
+              window.open(
+                `https://translate.google.com/translate?sl=auto&tl=fa&u=${encodeURIComponent(window.location.href)}`,
+                "_blank",
+              )
+            }
+            size="lg"
+            className="bg-emerald-500 hover:bg-emerald-600 text-white font-normal text-base px-8 py-6"
+          >
+            Translate to Persian
+            <Languages  className="ml-2 h-5 w-5" />
+          </Button>
+
+          <Button
+            onClick={scrollToPortfolio}
+            size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 font-normal text-base px-8 py-6"
+          >
+            View My Work Flow
+            <ArrowDown className="ml-2 h-5 w-5" />
+          </Button>
+        </div>
       </div>
 
       {/* Scroll Indicator */}
