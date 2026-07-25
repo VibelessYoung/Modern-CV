@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Languages  } from "lucide-react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
-import bg from "@/assets/images/bg.jpg";
+import bg from "@/assets/images/hero.webp";
 
 export function HeroSection() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
@@ -34,7 +34,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative flex items-center justify-center min-h-screen overflow-hidden"
     >
       {/* Video Background with Overlay */}
       <div className="absolute inset-0 z-0">
@@ -42,7 +42,7 @@ export function HeroSection() {
           alt="light motion video"
           src={bg}
           poster={bg}
-          className="w-full h-full object-cover"
+          className="object-cover w-full h-full"
           autoPlay
           loop
           muted
@@ -55,10 +55,10 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-8 text-center">
+      <div className="container relative z-10 px-8 mx-auto text-center">
         <motion.h1
           ref={headlineRef}
-          className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-hero-text mb-6 tracking-tight leading-tight"
+          className="mb-6 text-5xl font-bold leading-tight tracking-tight md:text-7xl lg:text-8xl font-heading text-hero-text"
           style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}
         >
           Creative Designer &<br />
@@ -66,7 +66,7 @@ export function HeroSection() {
         </motion.h1>
         <motion.p
           ref={taglineRef}
-          className="text-xl md:text-2xl text-hero-text/90 mb-12 max-w-2xl mx-auto leading-relaxed"
+          className="max-w-2xl mx-auto mb-12 text-xl leading-relaxed md:text-2xl text-hero-text/90"
         >
           Crafting immersive digital experiences with cutting-edge design and
           technology
@@ -80,26 +80,26 @@ export function HeroSection() {
               )
             }
             size="lg"
-            className="bg-emerald-500 hover:bg-emerald-600 text-white font-normal text-base px-8 py-6"
+            className="px-8 py-6 text-base font-normal text-white bg-emerald-500 hover:bg-emerald-600"
           >
             Translate to Persian
-            <Languages  className="ml-2 h-5 w-5" />
+            <Languages  className="w-5 h-5 ml-2" />
           </Button>
 
           <Button
             onClick={scrollToPortfolio}
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 font-normal text-base px-8 py-6"
+            className="px-8 py-6 text-base font-normal bg-primary text-primary-foreground hover:bg-primary/90"
           >
             View My Work Flow
-            <ArrowDown className="ml-2 h-5 w-5" />
+            <ArrowDown className="w-5 h-5 ml-2" />
           </Button>
         </div>
       </div>
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10"
+        className="absolute z-10 transform -translate-x-1/2 bottom-12 left-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
