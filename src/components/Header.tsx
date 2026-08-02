@@ -74,12 +74,12 @@ export function Header() {
       }`}
       style={{ minHeight: "64px" }}
     >
-      <div className="container mx-auto px-8 py-4 flex items-center justify-between">
+      <div className="container flex items-center justify-between px-8 py-4 mx-auto">
         <button
           onClick={() => scrollToSection("hero")}
-          className="text-2xl font-heading font-bold text-navbar-text hover:text-primary transition-colors cursor-pointer"
+          className="text-2xl font-bold transition-colors cursor-pointer font-heading text-navbar-text hover:text-primary"
         >
-          Portfolio
+          {"<Amir />"}
         </button>
 
         {/* Desktop Navigation */}
@@ -113,7 +113,7 @@ export function Header() {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden bg-transparent text-navbar-text hover:bg-accent hover:text-accent-foreground"
+          className="bg-transparent md:hidden text-navbar-text hover:bg-accent hover:text-accent-foreground"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
@@ -126,10 +126,10 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-background border-t border-border">
-          <nav className="container mx-auto px-8 py-6">
+        <div className="border-t md:hidden bg-background border-border">
+          <nav className="container px-8 py-6 mx-auto">
             <NavigationMenu orientation="vertical" className="w-full">
-              <NavigationMenuList className="flex flex-col gap-2 w-full">
+              <NavigationMenuList className="flex flex-col w-full gap-2">
                 {navItems.map((item) => (
                   <NavigationMenuItem key={item.id} className="w-full">
                     <button

@@ -8,27 +8,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 const experiences = [
   {
-    company: "",
-    role: "start learn web",
-    duration: "2025",
-    description: "start learning web and create page design and more",
+    company: "Self Learning",
+    role: "Frontend Dev",
+    duration: "2025 - Present",
+    description:
+      "Learning and building modern web applications with React, Next.js, Tailwind CSS, JavaScript, Git, and modern frontend best practices through hands-on projects.",
   },
   {
-    company: "uni-montazeri",
-    role: "create a tracker website",
+    company: "Montazeri Technical University",
+    role: "Team Work",
     duration: "2025",
     description:
-      "create a more page with a good design and a add work logic and i learn team work!",
+      "Designed and developed a tracker web application as part of an academic project using HTML/CSS/JS.",
   },
   {
-    company: "Azhman-Group",
-    role: "Check and analyze website",
+    company: "Azhman Group",
+    role: "Website Analyst",
     duration: "2025",
     description:
-      "check and analyze their website and give full feedbacks for optimize, seo, bugs and more",
+      "Performed a complete website audit, identifying UI/UX, SEO, accessibility, responsiveness, and performance improvements with actionable recommendations.",
+  },
+  {
+    company: "Montazeri Technical University",
+    role: "Arduino & IoT Developer",
+    duration: "2026",
+    description:
+      "Learning to build hardware-integrated web applications using Arduino, the Web Serial API, and React to monitor and visualize real-time sensor data.",
   },
 ];
-
 export function ExperienceSection() {
   const timelineRef = useRef<HTMLDivElement>(null);
 
@@ -102,7 +109,7 @@ export function ExperienceSection() {
                   index % 2 === 0 ? "md:mr-16" : "md:ml-16"
                 }`}
               >
-                <div className="p-8 transition-colors border rounded-lg bg-card text-card-foreground border-border hover:border-primary">
+                <div className="p-8 text-left transition-colors border rounded-lg bg-card text-card-foreground border-border hover:border-primary">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2 rounded-lg bg-primary/10">
                       <Briefcase

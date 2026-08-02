@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import profile from "@/assets/images/profile.webp";
+import yuta from "@/assets/images/yuta.png";
 
 export function AboutSection() {
   return (
@@ -17,7 +18,7 @@ export function AboutSection() {
             viewport={{ once: true }}
           >
             <img
-              src={profile}
+              src={yuta}
               alt="portrait"
               className="w-full h-auto rounded-lg"
               loading="lazy"
@@ -43,7 +44,7 @@ export function AboutSection() {
                 project is both visually stunning and technically sound.
               </p>
               <p>
-                I specialize in React, JavaScript, and modern web technologies,
+                I specialize in NextJS, React, and modern web technologies,
                 with a keen eye for detail and a commitment to accessibility. My
                 approach combines creative problem-solving with data-driven
                 insights to deliver solutions that truly resonate with users.

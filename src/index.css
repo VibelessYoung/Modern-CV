@@ -89,10 +89,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #60a5fa, #818cf8, #c084fc);
-
-  box-shadow:
-    0 0 12px rgba(99, 102, 241, 0.45),
-    0 0 24px rgba(168, 85, 247, 0.35);
 }
 
 ::-webkit-scrollbar-corner {
