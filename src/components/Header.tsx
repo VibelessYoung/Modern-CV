@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import ThemeButton from "./ui/ThemeButton";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -106,6 +107,7 @@ export function Header() {
                 </NavigationMenuItem>
               ))}
             </NavigationMenuList>
+            <ThemeButton />
           </NavigationMenu>
         </nav>
 
