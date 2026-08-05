@@ -22,9 +22,9 @@ export function PortfolioSection() {
     filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
   return (
-    <section id="portfolio" className="relative py-32 overflow-hidden animate-section bg-neutral">
-      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/15 via-blue-400/5 to-transparent -z-10" />
-      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/15 via-blue-400/5 to-transparent -z-10" />
+    <section id="portfolio" className="relative py-32 overflow-hidden bg-white animate-section dark:bg-neutral">
+      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent -z-10" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent -z-10" />
       <div className="container px-8 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -34,7 +34,7 @@ export function PortfolioSection() {
           className="mb-16 text-center"
         >
           <h2
-            className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-heading text-foreground"
+            className="mb-4 text-4xl font-bold leading-tight tracking-tight text-black md:text-5xl font-heading dark:text-foreground"
             style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}
           >
             Featured Projects
@@ -50,8 +50,8 @@ export function PortfolioSection() {
                 variant={filter === category ? "default" : "outline"}
                 className={
                   filter === category
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90 font-normal"
-                    : "bg-transparent text-foreground border-border hover:bg-accent hover:text-accent-foreground font-normal"
+                    ? "bg-primary text-black dark:text-primary-foreground hover:bg-primary/90 font-normal"
+                    : "bg-transparent text-black dark:text-foreground border-border hover:bg-accent hover:text-accent-foreground font-normal"
                 }
               >
                 {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -69,7 +69,7 @@ export function PortfolioSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 cursor-pointer bg-card text-card-foreground border-border hover:border-primary group">
+              <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 bg-gray-100 cursor-pointer dark:bg-card text-card-foreground border-border hover:border-primary group">
                 <div className="overflow-hidden">
                   <img
                     src={project.image}
@@ -89,10 +89,10 @@ export function PortfolioSection() {
                       </span>
                     ))}
                   </div>
-                  <CardTitle className="mb-2 text-2xl font-bold font-heading text-card-foreground">
+                  <CardTitle className="mb-2 text-2xl font-bold text-black font-heading dark:text-card-foreground">
                     {project.title}
                   </CardTitle>
-                  <CardDescription className="leading-relaxed text-muted-foreground">
+                  <CardDescription className="leading-relaxed text-black/60 dark:text-muted-foreground">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
@@ -100,7 +100,7 @@ export function PortfolioSection() {
                   <Button
                     onClick={() => navigate(`/project/${project.id}`)}
                     variant="ghost"
-                    className="justify-between w-full font-normal bg-transparent text-primary hover:bg-accent hover:text-primary group/btn"
+                    className="justify-between w-full font-normal bg-transparent text-primary hover:bg-gray-200 dark:hover:bg-accent hover:text-primary group/btn"
                   >
                     View Project
                     <ArrowRight className="w-5 h-5 transition-transform group-hover/btn:translate-x-1" />
