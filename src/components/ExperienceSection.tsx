@@ -64,10 +64,10 @@ export function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="relative py-32 overflow-hidden animate-section bg-background"
+      className="relative py-32 overflow-hidden bg-white animate-section dark:bg-background"
     >
-      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/15 via-blue-400/5 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/15 via-blue-400/5 to-transparent" />
+      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
       <div className="container px-8 mx-auto">
         <div className="absolute top-80 left-0 w-[220px] h-[220px] -translate-x-1/3 bg-primary/25 rounded-full blur-[120px]" />
         <div className="absolute top-1/3 right-0 w-[420px] h-[420px] translate-x-1/3 bg-indigo-500/20 rounded-full blur-[120px]" />
@@ -79,7 +79,7 @@ export function ExperienceSection() {
           className="mb-20 text-center"
         >
           <h2
-            className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-heading text-foreground"
+            className="mb-4 text-4xl font-bold leading-tight tracking-tight text-black md:text-5xl font-heading dark:text-foreground"
             style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}
           >
             Experience
@@ -109,7 +109,7 @@ export function ExperienceSection() {
                   index % 2 === 0 ? "md:mr-16" : "md:ml-16"
                 }`}
               >
-                <div className="p-8 text-left transition-colors border rounded-lg bg-card text-card-foreground border-border hover:border-primary">
+                <div className="p-8 text-left transition-colors bg-gray-100 border rounded-lg dark:bg-card text-card-foreground border-border hover:border-primary">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2 rounded-lg bg-primary/10">
                       <Briefcase
@@ -117,15 +117,15 @@ export function ExperienceSection() {
                         strokeWidth={1.5}
                       />
                     </div>
-                    <span className="font-mono text-sm text-muted-foreground">
+                    <span className="font-mono text-sm text-black/60 dark:text-muted-foreground">
                       {exp.duration}
                     </span>
                   </div>
-                  <h3 className="mb-2 text-2xl font-bold font-heading text-card-foreground">
+                  <h3 className="mb-2 text-2xl font-bold text-black font-heading dark:text-card-foreground">
                     {exp.role}
                   </h3>
                   <h4 className="mb-4 text-lg text-primary">{exp.company}</h4>
-                  <p className="leading-relaxed text-card-foreground">
+                  <p className="leading-relaxed text-black dark:text-card-foreground">
                     {exp.description}
                   </p>
                 </div>
