@@ -72,10 +72,10 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative py-32 overflow-hidden animate-section bg-neutral"
+      className="relative py-32 overflow-hidden bg-white animate-section dark:bg-neutral"
     >
-      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/15 via-blue-400/5 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/15 via-blue-400/5 to-transparent" />
+      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
       <div className="container px-8 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -85,13 +85,13 @@ export function ContactSection() {
           className="mb-16 text-center"
         >
           <h2
-            className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-heading text-foreground"
+            className="mb-4 text-4xl font-bold leading-tight tracking-tight text-black md:text-5xl font-heading dark:text-foreground"
             style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}
           >
             Get In Touch
           </h2>
           <div className="w-24 h-1 mx-auto mb-6 rounded-full bg-gradient-1" />
-          <p className="max-w-2xl mx-auto text-xl leading-relaxed text-muted-foreground">
+          <p className="max-w-2xl mx-auto text-xl leading-relaxed text-black/60 dark:text-muted-foreground">
             Have a project in mind or just want to chat? Feel free to reach out!
           </p>
         </motion.div>
@@ -104,12 +104,12 @@ export function ContactSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Card className="bg-card text-card-foreground border-border">
+            <Card className="bg-gray-100 dark:bg-card text-card-foreground border-border">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold font-heading text-card-foreground">
+                <CardTitle className="text-2xl font-bold text-black font-heading dark:text-card-foreground">
                   Send a Message
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardDescription className="text-black/60 dark:text-muted-foreground">
                   Fill out the form below and I'll get back to you as soon as
                   possible.
                 </CardDescription>
@@ -119,7 +119,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block mb-2 text-sm font-medium text-card-foreground"
+                      className="block mb-2 text-sm font-medium text-black dark:text-card-foreground"
                     >
                       Name
                     </label>
@@ -130,14 +130,14 @@ export function ContactSection() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="bg-background text-foreground border-border focus:border-primary"
+                      className="text-black bg-white dark:bg-background dark:text-foreground border-border focus:border-primary"
                       placeholder="Your name"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="email"
-                      className="block mb-2 text-sm font-medium text-card-foreground"
+                      className="block mb-2 text-sm font-medium text-black dark:text-card-foreground"
                     >
                       Email
                     </label>
@@ -148,14 +148,14 @@ export function ContactSection() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="bg-background text-foreground border-border focus:border-primary"
+                      className="text-black bg-white dark:bg-background dark:text-foreground border-border focus:border-primary"
                       placeholder="your.email@example.com"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="message"
-                      className="block mb-2 text-sm font-medium text-card-foreground"
+                      className="block mb-2 text-sm font-medium text-black dark:text-card-foreground"
                     >
                       Message
                     </label>
@@ -165,7 +165,7 @@ export function ContactSection() {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      className="bg-background text-foreground border-border focus:border-primary min-h-[150px]"
+                      className="dark:bg-background bg-white text-black dark:text-foreground border-border focus:border-primary min-h-[150px]"
                       placeholder="Tell me about your project..."
                     />
                   </div>
@@ -191,20 +191,20 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="mb-6 text-2xl font-bold font-heading text-foreground">
+              <h3 className="mb-6 text-2xl font-bold text-black font-heading dark:text-foreground">
                 Connect With Me
               </h3>
               <div className="space-y-6">
                 <a
                   href="mailto:vibelessyoung@gmail.com"
-                  className="flex items-center gap-4 p-4 transition-colors border rounded-lg bg-card text-card-foreground border-border hover:border-primary group"
+                  className="flex items-center gap-4 p-4 transition-colors bg-gray-100 border rounded-lg dark:bg-card text-card-foreground border-border hover:border-primary group"
                 >
                   <div className="p-3 transition-colors rounded-lg bg-primary/10 group-hover:bg-primary/20">
                     <Mail className="w-6 h-6 text-primary" strokeWidth={1.5} />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium text-card-foreground">
+                    <p className="text-sm text-black dark:text-muted-foreground">Email</p>
+                    <p className="font-medium text-black/60 dark:text-card-foreground">
                       vibelessyoung@gmail.com
                     </p>
                   </div>
@@ -213,7 +213,7 @@ export function ContactSection() {
                   href="https://github.com/VibelessYoung"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 transition-colors border rounded-lg bg-card text-card-foreground border-border hover:border-primary group"
+                  className="flex items-center gap-4 p-4 transition-colors bg-gray-100 border rounded-lg dark:bg-card text-card-foreground border-border hover:border-primary group"
                 >
                   <div className="p-3 transition-colors rounded-lg bg-primary/10 group-hover:bg-primary/20">
                     <Github
@@ -222,8 +222,8 @@ export function ContactSection() {
                     />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">GitHub</p>
-                    <p className="font-medium text-card-foreground">
+                    <p className="text-sm text-black dark:text-muted-foreground">GitHub</p>
+                    <p className="font-medium text-black/60 dark:text-card-foreground">
                       View my repositories
                     </p>
                   </div>
@@ -231,11 +231,11 @@ export function ContactSection() {
               </div>
             </div>
 
-            <div className="p-8 border rounded-lg bg-card text-card-foreground border-border">
-              <h4 className="mb-4 text-xl font-bold font-heading text-card-foreground">
+            <div className="p-8 bg-gray-100 border rounded-lg dark:bg-card text-card-foreground border-border">
+              <h4 className="mb-4 text-xl font-bold text-black font-heading dark:text-card-foreground">
                 Let's Collaborate
               </h4>
-              <p className="leading-relaxed text-card-foreground">
+              <p className="leading-relaxed text-black/60 dark:text-card-foreground">
                 I'm always interested in hearing about new projects and
                 opportunities. Whether you have a question or just want to say
                 hi, I'll do my best to get back to you!
