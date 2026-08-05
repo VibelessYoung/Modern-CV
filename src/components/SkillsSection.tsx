@@ -65,10 +65,10 @@ export function SkillsSection() {
     <section
       id="skills"
       ref={sectionRef}
-      className="relative py-32 overflow-hidden overflow-x-hidden animate-section bg-background"
+      className="relative py-32 overflow-hidden overflow-x-hidden bg-white animate-section dark:bg-background"
     >
-      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/15 via-blue-400/5 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/15 via-blue-400/5 to-transparent" />
+      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
       <div
         className="absolute inset-0 z-0 pointer-events-none
     [mask-image:radial-gradient(ellipse_at_center,black_65%,transparent_100%)]"
@@ -82,7 +82,7 @@ export function SkillsSection() {
           className="mb-20 text-center"
         >
           <h2
-            className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-heading text-foreground"
+            className="mb-4 text-4xl font-bold leading-tight tracking-tight text-black md:text-5xl font-heading dark:text-foreground"
             style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}
           >
             Skills & Expertise
@@ -108,10 +108,10 @@ export function SkillsSection() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg font-semibold font-heading text-foreground">
+                      <h3 className="text-lg font-semibold text-black font-heading dark:text-foreground">
                         {skill.name}
                       </h3>
-                      <span className="font-mono text-sm text-muted-foreground">
+                      <span className="font-mono text-sm text-black/70 dark:text-muted-foreground">
                         {skill.level}%
                       </span>
                     </div>
