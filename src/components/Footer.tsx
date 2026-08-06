@@ -7,13 +7,17 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative border-t border-border/50 bg-background/70 backdrop-blur-xl">
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-blue-500/15 via-blue-400/5 to-transparent" />
+    <footer className="relative border-t border-border/50 bg-white dark:bg-background/70 backdrop-blur-xl">
+      <div
+        className="absolute inset-0 pointer-events-none bg-gradient-to-b
+from-blue-500/20 dark:from-blue-400/15
+via-blue-300/10 dark:via-blue-500/5 to-transparent"
+      />
 
       <div className="container relative px-8 py-10 mx-auto">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="text-center md:text-left">
-            <p className="text-sm tracking-wide text-muted-foreground">
+            <p className="text-sm tracking-wide text-black/60 dark:text-muted-foreground">
               © {new Date().getFullYear()} Portfolio.
               <span className="ml-1 text-primary">All rights reserved.</span>
             </p>
@@ -40,7 +44,7 @@ export function Footer() {
           "
             >
               <Github
-                className="w-5 h-5 transition-all duration-300 text-muted-foreground group-hover:text-primary group-hover:rotate-6"
+                className="w-5 h-5 transition-all duration-300 text-black/60 dark:text-muted-foreground group-hover:text-primary group-hover:rotate-6"
                 strokeWidth={1.8}
               />
             </a>
@@ -63,7 +67,7 @@ export function Footer() {
           "
             >
               <Mail
-                className="w-5 h-5 transition-all duration-300 text-muted-foreground group-hover:text-primary"
+                className="w-5 h-5 transition-all duration-300 text-black/60 dark:text-muted-foreground group-hover:text-primary"
                 strokeWidth={1.8}
               />
             </a>
@@ -90,7 +94,8 @@ export function Footer() {
               <Send
                 className="
             h-5 w-5
-            text-muted-foreground
+            text-black/60
+            dark:text-muted-foreground
             transition-all
             duration-300
             group-hover:text-primary
