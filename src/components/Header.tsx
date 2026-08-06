@@ -70,7 +70,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-sm border-b border-border"
+          ? "dark:bg-white/5 bg-black/75 backdrop-blur-sm border-b border-white/30 dark:border-border"
           : "bg-transparent"
       }`}
       style={{ minHeight: "64px" }}
