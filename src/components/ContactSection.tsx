@@ -74,8 +74,8 @@ export function ContactSection() {
       id="contact"
       className="relative py-32 overflow-hidden bg-white animate-section dark:bg-neutral"
     >
-      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-primary/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-primary/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
       <div className="container px-8 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

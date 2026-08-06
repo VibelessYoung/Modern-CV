@@ -1,13 +1,16 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Languages  } from "lucide-react";
-import { motion } from "framer-motion";
+import { ArrowDown, Languages } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { gsap } from "gsap";
 import bg from "@/assets/images/hero.webp";
 
 export function HeroSection() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const taglineRef = useRef<HTMLParagraphElement>(null);
+  const { scrollY } = useScroll();
+
+  const opacity = useTransform(scrollY, [0, 700, 900], [1, 1, 0]);
 
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.5 });
@@ -37,13 +40,14 @@ export function HeroSection() {
       className="relative flex items-center justify-center min-h-screen overflow-hidden"
     >
       {/* Video Background with Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="fixed inset-0 z-0">
         <motion.video
           alt="light motion video"
           src={bg}
           poster={bg}
           className="object-cover w-full h-full"
           autoPlay
+          style={{ opacity }}
           loop
           muted
           playsInline
@@ -51,7 +55,7 @@ export function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/75 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b dark:from-transparent dark:via-background/75 dark:to-background" />
       </div>
 
       {/* Content */}
@@ -83,7 +87,7 @@ export function HeroSection() {
             className="px-8 py-6 text-base font-normal text-white bg-emerald-500 hover:bg-emerald-600"
           >
             Translate to Persian
-            <Languages  className="w-5 h-5 ml-2" />
+            <Languages className="w-5 h-5 ml-2" />
           </Button>
 
           <Button

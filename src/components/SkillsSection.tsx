@@ -67,8 +67,8 @@ export function SkillsSection() {
       ref={sectionRef}
       className="relative py-32 overflow-hidden overflow-x-hidden bg-white animate-section dark:bg-background"
     >
-      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-primary/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-primary/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
       <div
         className="absolute inset-0 z-0 pointer-events-none
     [mask-image:radial-gradient(ellipse_at_center,black_65%,transparent_100%)]"
@@ -103,7 +103,7 @@ export function SkillsSection() {
                 className="group"
               >
                 <div className="flex items-center gap-4 mb-3">
-                  <div className="p-3 transition-colors border rounded-lg bg-gray-100 dark:bg-card border-border group-hover:border-primary">
+                  <div className="p-3 transition-colors bg-gray-100 border rounded-lg dark:bg-card border-border group-hover:border-primary">
                     <Icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">

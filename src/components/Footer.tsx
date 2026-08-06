@@ -7,8 +7,8 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative border-t border-border/50 bg-white dark:bg-background/70 backdrop-blur-xl">
-      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+    <footer className="relative bg-white dark:border-t dark:border-primary/50 dark:bg-background/70 backdrop-blur-xl">
+      <div className="absolute inset-x-0 top-0 h-40 pointer-events-none bg-gradient-to-b from-primary/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
       <div className="container relative px-8 py-10 mx-auto">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="text-center md:text-left">

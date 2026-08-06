@@ -66,8 +66,8 @@ export function ExperienceSection() {
       id="experience"
       className="relative py-32 overflow-hidden bg-white animate-section dark:bg-background"
     >
-      <div className="absolute inset-x-0 top-0 pointer-events-none h-1/3 bg-gradient-to-b from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-blue-500/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+      <div className="absolute inset-x-0 top-0 pointer-events-none -z-10 h-1/3 bg-gradient-to-b from-primary/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-1/3 bg-gradient-to-t from-primary/80 dark:from-blue-400/15 via-blue-300/10 dark:via-blue-500/5 to-transparent" />
       <div className="container px-8 mx-auto">
         <div className="absolute top-80 left-0 w-[220px] h-[220px] -translate-x-1/3 bg-primary/25 rounded-full blur-[120px]" />
         <div className="absolute top-1/3 right-0 w-[420px] h-[420px] translate-x-1/3 bg-indigo-500/20 rounded-full blur-[120px]" />
