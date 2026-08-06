@@ -83,7 +83,7 @@ export function PortfolioSection() {
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1 text-xs border rounded-full bg-muted text-muted-foreground border-border"
+                        className="px-3 py-1 text-xs border rounded-full text-black bg-gray-200 dark:bg-muted dark:text-muted-foreground border-border"
                       >
                         {tag}
                       </span>

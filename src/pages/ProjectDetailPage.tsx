@@ -15,9 +15,9 @@ export function ProjectDetailPage() {
 
   if (!project) {
     return (
-      <div className="min-h-screen bg-background text-foreground flex items-center justify-center px-8">
+      <div className="min-h-screen bg-white dark:bg-background text-foreground flex items-center justify-center px-8">
         <div className="text-center">
-          <h1 className="text-4xl font-heading font-bold text-foreground mb-4">
+          <h1 className="text-4xl font-heading font-bold text-black dark:text-foreground mb-4">
             Project Not Found
           </h1>
           <Button
@@ -33,8 +33,8 @@ export function ProjectDetailPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <div className="min-h-screen bg-white dark:bg-background text-foreground">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black/75 dark:bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-8 py-6">
           <Button
             onClick={() => navigate("/")}
@@ -50,10 +50,10 @@ export function ProjectDetailPage() {
       <main className="pt-32 pb-24">
         <div className="container mx-auto px-8">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold text-foreground mb-6 tracking-tight leading-tight">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold text-black dark:text-foreground mb-6 tracking-tight leading-tight">
               {project.title}
             </h1>
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+            <p className="text-xl text-black/60 dark:text-muted-foreground mb-12 leading-relaxed">
               {project.description}
             </p>
 
@@ -68,15 +68,15 @@ export function ProjectDetailPage() {
 
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               <div>
-                <h2 className="text-2xl font-heading font-bold text-foreground mb-4">
+                <h2 className="text-2xl font-heading font-bold text-black dark:text-foreground mb-4">
                   Overview
                 </h2>
-                <p className="text-foreground leading-relaxed">
+                <p className="text-black/60 dark:text-foreground leading-relaxed">
                   {project.overview}
                 </p>
               </div>
               <div>
-                <h2 className="text-2xl font-heading font-bold text-foreground mb-4">
+                <h2 className="text-2xl font-heading font-bold text-black dark:text-foreground mb-4">
                   Technologies
                 </h2>
                 <div className="flex flex-wrap gap-3">
@@ -93,7 +93,7 @@ export function ProjectDetailPage() {
             </div>
 
             <div className="mb-16">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-6">
+              <h2 className="text-2xl font-heading font-bold text-black dark:text-foreground mb-6">
                 Project Gallery
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -109,8 +109,8 @@ export function ProjectDetailPage() {
               </div>
             </div>
 
-            <div className="bg-card text-card-foreground p-8 rounded-lg border border-border">
-              <h2 className="text-2xl font-heading font-bold text-card-foreground mb-4">
+            <div className="bg-gray-100 dark:bg-card text-card-foreground p-8 rounded-lg border border-border">
+              <h2 className="text-2xl font-heading font-bold text-black dark:text-card-foreground mb-4">
                 Link
               </h2>
               <a

@@ -103,7 +103,7 @@ export function SkillsSection() {
                 className="group"
               >
                 <div className="flex items-center gap-4 mb-3">
-                  <div className="p-3 transition-colors border rounded-lg bg-card border-border group-hover:border-primary">
+                  <div className="p-3 transition-colors border rounded-lg bg-gray-100 dark:bg-card border-border group-hover:border-primary">
                     <Icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">
