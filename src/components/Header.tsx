@@ -111,24 +111,28 @@ export function Header() {
           </NavigationMenu>
         </nav>
 
-        {/* Mobile Menu Button */}
-        <Button
-          variant="ghost"
-          size="icon"
-          className="bg-transparent md:hidden text-navbar-text hover:bg-accent hover:text-accent-foreground"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? (
-            <X className="w-6 h-6" />
-          ) : (
-            <Menu className="w-6 h-6" />
-          )}
-        </Button>
+        {/* Mobile Actions */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeButton />
+
+          <Button
+            variant="ghost"
+            size="icon"
+            className="bg-transparent text-navbar-text hover:bg-accent hover:text-accent-foreground"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </Button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="border-t md:hidden bg-background border-border">
+        <div className="border-t md:hidden bg-black/95 dark:bg-black/95 border-border">
           <nav className="container px-8 py-6 mx-auto">
             <NavigationMenu orientation="vertical" className="w-full">
               <NavigationMenuList className="flex flex-col w-full gap-2">
