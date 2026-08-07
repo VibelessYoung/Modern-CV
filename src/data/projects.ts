@@ -19,6 +19,7 @@ import socialx1 from "@/assets/images/social-1.webp";
 import socialx2 from "@/assets/images/social-2.webp";
 import socialx3 from "@/assets/images/social-3.webp";
 import socialx4 from "@/assets/images/social-4.webp";
+import socialx5 from "@/assets/images/social-5.webp";
 import resbanner from "@/assets/images/res-banner.webp";
 import res1 from "@/assets/images/res1.webp";
 import res2 from "@/assets/images/res2.webp";
@@ -277,6 +278,7 @@ export const projects: Project[] = [
       { url: socialx2, alt: "Profile page" },
       { url: socialx3, alt: "Messages" },
       { url: socialx4, alt: "Responsive layout" },
+      { url: socialx5, alt: "Responsive layout" },
     ],
     results: "https://github.com/VibelessYoung/SocialX-UI",
   },
